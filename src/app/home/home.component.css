@@ -1,0 +1,141 @@
+.home
+{
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    background-color: black;
+    background-image: url('../../assets/back.jpeg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    border-radius: 20%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    backface-visibility: calc(40);
+        
+}
+.home h1{
+    margin-left: 50vw;
+    text-transform:capitalize;
+    color: whitesmoke;
+    border-bottom: 0.5px solid white;
+    text-shadow: 2px 2px 5px rgba(245, 238, 238, 0.5);
+    display: inline-block; 
+    border-radius: 10px;
+
+}
+.home .first-title
+{
+    margin-left: 20vw;
+
+    margin-top: 30vh;
+
+}
+.home img {
+  z-index: 100000;
+  margin: 0% 0 0 72.5%;
+  width: 35%; /* Ensure the width and height are equal to make it a perfect circle */
+  height: 40%; /* Ensure the width and height are equal to make it a perfect circle */
+  border-radius: 50%;
+  object-fit: cover; /* Cover ensures the image covers the box while maintaining its aspect ratio */
+}
+
+
+.bio {
+    margin: 30vh 0 0 40vw;
+
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .bio p {
+    margin-left: 10vw;
+
+    background-color: transparent;
+    color: rgb(240, 74, 13);
+    text-shadow: 2px 2px 5px rgb(8, 1, 1);
+
+    display:inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  
+
+
+ .option
+{
+    margin-top: 5%;
+height: 90px;
+line-height: 50px;
+overflow: hidden;
+}
+.option li
+{
+list-style: none;
+text-shadow: 2px 2px 5px rgba(250, 249, 249, 0.5);
+
+color: #afadd0;
+font-size: 30px;
+font-weight: 200;
+position: relative;
+top: 0;
+animation: slide 12s steps(4) infinite;
+}
+@keyframes slide
+{
+100%
+{
+top: -360px;
+}
+}
+.option li span
+{
+position: relative;
+margin: 5px 0;
+line-height: 90px;
+}
+.option li span::after
+{
+content: '';
+position: absolute;
+left: 0;
+height: 180%;
+width: 100%;
+background: #040202;
+border-left: 2px solid  #afadd0;
+animation: typing 3s steps(10) infinite;
+}
+@keyframes typing
+{
+40%, 60%
+{
+left: calc(100% + 30px);
+}
+100%
+{
+left: 0;
+}
+}
+
+@media (max-width: 1500px) {
+  .bio{
+    margin-left: 0;
+    white-space:wrap;
+  }
+  .bio p {
+    white-space:wrap;
+
+  }
+  .option{
+    display: none;
+  }
+  
+}

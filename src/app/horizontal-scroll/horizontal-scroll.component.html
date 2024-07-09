@@ -1,0 +1,8 @@
+<div class="tall-outer-container" [ngStyle]="{ height: dynamicHeight + 'px' }">
+    <div class="sticky-inner-container" #containerRef>
+      <div class="horizontal-translate-container" [ngStyle]="{ transform: 'translateX(' + translateX + 'px)' }" #objectRef>
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </div>
+  

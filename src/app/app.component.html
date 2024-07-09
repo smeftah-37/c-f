@@ -1,0 +1,43 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<main class="main">
+  <section class="bumper-section">
+      <app-menu></app-menu>
+      <app-home></app-home>
+    </section>
+
+    <section class="horizontal-section">
+      <app-horizontal-scroll>
+        <div class="cards-container">
+          <div class="sample-card" *ngFor="let item of items" [ngClass]="item.class">
+            <img [src]="item.image" alt="{{ item.content }}"><div><h3>{{item.title}}</h3>{{ item.content }}</div></div>
+        </div>
+      </app-horizontal-scroll>
+    </section>
+    <section  id="services">
+      <app-services></app-services>
+    </section>
+    <section id="our-history"><app-our-story></app-our-story></section>
+    <section id="contact-us"><app-contact-us></app-contact-us></section>
+  
+  
+</main>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<router-outlet />
