@@ -8,40 +8,51 @@
     position: absolute;
     height: 13%;
     width: 100%;
-    background-color: rgba(6, 24, 16, 0.747);
+   
+  }
+  .navbar svg{
+    width: 30px;
+    height: 30px;
+    display: none;
   }
   .navbar img{
     padding: 0;
   }
-
+  img{
+    width: 30px;
+    height: 30px;
+  }
   .navbar {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.3em;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20%;
     flex-wrap: nowrap;
-    color: white;
+    color: orangered;
 
   }
   .nav-item{
     margin-left: 3%;
     white-space: nowrap; /* Prevent line breaks within text */
-    color: white;
+    color: orangered;
 
   }
   .navbar-nav .nav-link {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    color: white !important;
+        color: orangered !important;
+
   }
   
   .navbar-nav .nav-item.active .nav-link {
-    color: white !important;
+        color: orangered !important;
   }
-  
+  .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+  }
   .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle {
-    color: white !important;
+        color: orangered !important;
   }
   
   .navbar-nav .dropdown-menu .dropdown-item {
@@ -52,9 +63,10 @@
 
 
   }
-  .navbar .navbar-collapse {
-    order: 1;
-  }
+.dropdown-item
+{
+  color: black;
+}
   .navbar .nav-link:hover {
     border-bottom: 3px solid white;
     border-radius: 10px;
@@ -64,14 +76,49 @@
   }
   
   .navbar .disable {
-    margin: 0%  0 0 25vw;
+    margin: 0%  0 0 0vw;
   }
-  @media (max-width: 900px) {
-    .navbar .navbar-collapse {
+  @media (max-width: 1000px) {
+
+  .open{
+    display: none;
+  }
+    .navbar svg{
+     
+      display:block;
+      margin-left: calc(100% - 50px);
+      
+    }
+    .navbar-collapse {
+      display: flex;
+      flex-direction: column;
+      gap: 10%;
+      margin-left: 60%;
+      margin-top: 30vh;
+    }
+    
+    .navbar-nav.mr-auto {
       order: 2;
     }
-  
-    .navbar .nav-link.disabled {
+    
+    .svgtoggle {
       order: 1;
+      margin-top: -20%;
     }
+    .navbar-nav1
+    {
+      margin:  0 0 0 0;
+    }
+ 
+  }
+
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Adjust as needed */
+  }
+  .dropdown-menu
+  {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }

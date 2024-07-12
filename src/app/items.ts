@@ -1,26 +1,26 @@
 export const items = [
     {
       id: 1,
-      title: 'project 1',
-      content: 'dsdljdfljafjeraerg .. ksdjalf lkdjslfakj ;ldskjf ;alkj ldkfja dlskjfaldksjf slkfja lkjfsa lkjf alskjf a',
+      title: 'Le Fabergé Autograph',
+      content: "La nouvelle Le Fabrégé Autograph Collection Casablanca by Le Mariott, prévue pour 2025, aura un concept unique au Maroc et insufflera une nouvelle vie au paysage hôtelier casablancais. Doté de 104 chambres, il sera situé dans l'une des rues les plus dynamiques de la ville.",
       class: 'item-1',
-      image: 'apart3.png'
+      image: '../../assets/apart3.png'
     },
     {
       id: 2,
-      title: 'project 2',
+      title: 'Global Engines Fès/Kénitra',
 
-      content: 'dsdljdfljafjeraerg .. ksdjalf lkdjslfakj ;ldskjf ;alkj ldkfja dlskjfaldksjf slkfja lkjfsa lkjf alskjf a',
+      content: "Totalement réinventé dans la ville de Fès encore plus grande et plus belle que son prédécesseur, le nouveau showroom Hyundai Fès a pris place sur une superficie qui s'étend sur 12 000 m². L'un des plus grands au Maroc fabriqué dans le plein respect des normes internationales du fabricant.",
       class: 'item-2',
-      image: 'apart2.png'
+      image: '../../assets/apart2.png'
     },
     {
       id: 3,
-      title: 'project 3',
+      title: 'Hôtel Franceville',
 
       content: 'Another item content for item 3 Another item content for item 3Another item content for item 3Another item content for item 3Another item content for item 3',
       class: 'item-3',
-      image: 'apart1.png'
+      image: '../../assets/apart1.png'
     },
     {
       id: 4,
@@ -28,15 +28,8 @@ export const items = [
 
       content: 'Another item content for item 3Another item content for item 3Another item content for item 3Another item content for item 3',
       class: 'item-4',
-      image: 'apart2.png'
-    },
-    {
-      id: 5,
-      title: 'project 5',
-
-      content: 'Another item content for item 3Another item content for item 3Another item content for item 3Another item content for item 3',
-      class: 'item-5',
-      image: 'apart2.png'
+      image: '../../assets/apart2.png'
     }
+ 
   ];
   

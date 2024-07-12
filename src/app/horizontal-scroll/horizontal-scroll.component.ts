@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, OnInit, HostListener, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, OnInit, HostListener, ElementRef, ViewChild, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
 
 @Component({
   selector: 'app-horizontal-scroll',
@@ -15,30 +15,39 @@ export class HorizontalScrollComponent implements OnInit, AfterViewInit {
   @ViewChild('containerRef') containerRef!: ElementRef;
   @ViewChild('objectRef') objectRef!: ElementRef;
 
-  constructor() {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngOnInit(): void {}
 
   ngAfterViewInit(): void {
-    this.handleDynamicHeight();
-    window.addEventListener('resize', this.handleDynamicHeight.bind(this));
-    window.addEventListener('scroll', this.handleScroll.bind(this));
+    if (isPlatformBrowser(this.platformId)) {
+        this.handleDynamicHeight();
+        window.addEventListener('resize', this.handleDynamicHeight.bind(this));
+        window.addEventListener('scroll', this.handleScroll.bind(this));
+    }
   }
 
   handleDynamicHeight(): void {
-    const objectWidth = this.objectRef.nativeElement.scrollWidth;
-    const dynamicHeight = this.calcDynamicHeight(objectWidth);
-    this.dynamicHeight = dynamicHeight;
+    if (isPlatformBrowser(this.platformId)) {
+        const objectWidth = this.objectRef.nativeElement.scrollWidth;
+        const dynamicHeight = this.calcDynamicHeight(objectWidth);
+        this.dynamicHeight = dynamicHeight;
+    }
   }
 
   calcDynamicHeight(objectWidth: number): number {
-    const vw = window.innerWidth;
-    const vh = window.innerHeight;
-    return objectWidth - vw + vh + 150;
+    if (isPlatformBrowser(this.platformId)) {
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+        return objectWidth - vw + vh + 150;
+    }
+    return 0; // Fallback value if not in the browser
   }
 
   handleScroll(): void {
-    const offsetTop = -this.containerRef.nativeElement.offsetTop;
-    this.translateX = offsetTop;
+    if (isPlatformBrowser(this.platformId)) {
+        const offsetTop = -this.containerRef.nativeElement.offsetTop;
+        this.translateX = offsetTop;
+    }
   }
 }

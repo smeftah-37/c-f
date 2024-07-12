@@ -1,0 +1,161 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 600px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.card {
+    width: 100px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(22, 21, 21, 0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: rgb(254, 254, 255);
+    color: orangered;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    font-size: 29px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 50vh;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 5px rgba(245, 238, 238, 0.5);
+    background-color: rgba(0, 0, 0, 0.561);
+
+}
+
+.description p {
+    color: white;
+    padding-top: 5px;
+}
+
+.description h2 {
+    text-transform: uppercase;
+    color: orangered;
+    font-size: 1.5em;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    position: relative;
+    overflow: hidden; /* Ensures the pseudo-element stays within the card */
+}
+.card[for="c2"] {
+    position: relative;
+    overflow: hidden; /* Ensures the pseudo-element stays within the card */
+}
+.card[for="c3"] {
+    position: relative;
+    overflow: hidden; /* Ensures the pseudo-element stays within the card */
+}
+.card[for="c1"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../public/img.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.85; /* Adjust the opacity as needed */
+    z-index: 1; /* Places the background below the content */
+}
+
+.card[for="c1"] * {
+    position: relative;
+    z-index: 2; /* Ensures the content stays above the background */
+}
+.card[for="c2"] * {
+    position: relative;
+    z-index: 2; /* Ensures the content stays above the background */
+}
+.card[for="c3"] * {
+    position: relative;
+    z-index: 2; /* Ensures the content stays above the background */
+}
+.card[for="c2"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../public/img1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.85; /* Adjust the opacity as needed */
+    z-index: 1; /* Places the background below the content */
+
+}
+.card[for="c3"]::before  {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../public/1516-780x470.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.85; /* Adjust the opacity as needed */
+    z-index: 1; /* Places the background below the content */
+
+}
+.title-culture
+{
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px rgba(245, 238, 238, 0.5);
+
+}

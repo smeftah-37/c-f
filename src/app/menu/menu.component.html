@@ -1,27 +1,24 @@
-<nav class="navbar navbar-expand-lg navbar-light ">
-  <a class="navbar-brand" href="#">
-    <img width="130" height="120" src="https://ceyefe.org/wp-content/uploads/2022/11/LOGO-2022-1-148x132.png" alt="Logo" decoding="async" loading="lazy">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"></a>
+
+  <div class="navbar-collapse" id="navbarNav">
+    <!-- Left-side menu items -->
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+        <a class="nav-link" href="#">{{ 'navbar.home' | translate }} <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" (click)="scrollToOurHistory()">Our History</a>
+        <a class="nav-link" href="#" (click)="scrollToOurHistory()">{{ 'navbar.ourHistory' | translate }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Culture</a>
+        <a class="nav-link" href="#" (click)="scrollToCultur()">{{ 'navbar.culture' | translate }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Services</a>
+        <a class="nav-link" href="#" (click)="scrollToServices()"> {{ 'navbar.services' | translate }}</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Projects
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="scrollToProject()">
+          {{ 'navbar.projects' | translate }}
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Feature 1</a>
@@ -29,19 +26,27 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" (click)="scrollToContactUs()">Contact Us</a>
+        <a class="nav-link" href="#" (click)="scrollToContactUs()">{{ 'navbar.contactUs' | translate }}</a>
       </li>
     </ul>
-    <ul class="navbar-nav ml-auto disable">
+
+    <!-- Right-side menu items -->
+    <ul class="navbar-nav1 ml-auto">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span class="glyphicon glyphicon-flag"></span> es <span class="caret"></span>
+          <span class="glyphicon glyphicon-flag"></span> {{ currentLang }} <span class="caret"></span>
         </a>
         <div class="dropdown-menu" aria-labelledby="languageDropdown">
-          <a class="dropdown-item" href="#">es</a>
-          <a class="dropdown-item" href="#">en</a>
+          <a class="dropdown-item" href="#" (click)="switchLanguage('en')"><img src="../../assets/en.svg"></a>
+          <a class="dropdown-item" href="#" (click)="switchLanguage('fr')"><img src="../../assets/france.svg"></a>
+          <a class="dropdown-item" href="#" (click)="switchLanguage('es')"><img src="../../assets/es.svg"></a>
         </div>
       </li>
     </ul>
+
+    <!-- Toggle Button -->
+    <svg (click)="toggleNavbar()" class="svgtoggle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+    </svg>
   </div>
 </nav>

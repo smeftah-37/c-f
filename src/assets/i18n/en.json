@@ -1,0 +1,58 @@
+{
+  "titleCulture": "A Culture Based On The Three Dimensions Of A Project",
+  "communication": {
+    "title": "Communication",
+    "description": "Communication is crucial on a project. When a team composed of different people with complementary skills will only function well if communication is managed by a polyglot of technical language. If you do not manage and master technical communication, it is likely that your project will get stuck."
+  },
+  "uniqueness": {
+    "title": "Uniqueness",
+    "description": "Uniqueness is a strong characteristic of a project. Each project is unique by definition. Your project is unique. Why is this notion of uniqueness so important? Simply because doing something new implies uncertainty, which is a source of risk."
+  },
+  "anticipation": {
+    "title": "Anticipation",
+    "description": "Your project is therefore made up of risks (and opportunities), and the only way to avoid them is to anticipate them. Not projecting into the future, not anticipating, is not mastering your risks, and therefore not mastering your project. So ask yourself these questions about your project: Who needs to communicate well? How to streamline communication channels? What is unique about my project? What is different from what we are used to doing? What should I anticipate? What are the risks and opportunities? This is our culture."
+  },
+    "navbar": {
+    "home": "Home",
+    "ourHistory": "Our History",
+    "culture": "Culture",
+    "services": "Services",
+    "projects": "Projects",
+    "contactUs": "Contact Us",
+    "toggle": "Toggle"
+  },
+    "YOUR_NEEDS": "your needs",
+    "IN_ONE_ECOSYSTEM": "in a single",
+    "ECO": "ecosystem",
+    "INTEGRATED_TEAM": "An integrated, human, and 'field' team",
+    "MULTI_EXPERTS": "Senior multi-experts",
+    "KNOW_HOW": "A 40-year expertise",
+    "AFRICAN_CONSULTANCY": "An African consulting firm, for the African continent",
+
+    "ourStory": {
+        "title": "Building Legacies Since 1960: Excellence in Construction and Project Management",
+        "text": "Our journey in the construction industry began in 1960, alongside some of the most revered figures in architecture and construction across the Kingdom of Morocco. From the pioneering leadership of Master Abdelkader ben Salem, Master Elie azagury, and Master Zevaco to the visionary contributions of Master Albert ben Chetrite, Mr ABdelali Bennis et fils, and others including Mohammed Fikri Ben abdellah, Hamid guessous, Rachid Andaloussi, Said lahlou, and Mostafa Driouech, we inherited a rich legacy of knowledge and expertise. This heritage, passed down through generations, forms the cornerstone of our identity. At C & F, we offer more than just consultancy and project management; we provide a transformative partnership throughout every critical phase of construction projects. Our commitment to excellence is grounded in the specialized discipline of Project Management (CPM), a pivotal skill that integrates cutting-edge tools and multidisciplinary knowledge. This approach ensures the successful execution of complex projects across diverse sectors including industrial, logistics, airport, medical, and hospitality."
+      },
+      "offerings": {
+    "title": "What We're Offering",
+    "subtitle": "Mastery of operations to ensure quality, flexibility, cost efficiency, and sustainable productivity. Our support includes client expectation management, business plan security, tender process management, contract negotiation, and on-site construction supervision.",
+    "cards": [
+      {
+        "title": "Global Project Management",
+        "description": "Full support for project design, company selection, and construction site follow-up until project completion. Services include project design (APS, APD, DCE), technical document preparation, work management and coordination, and client assistance in company selection."
+      },
+      {
+        "title": "Real Estate Development",
+        "description": "Innovative approaches to redefine and grow the real estate sector by integrating issues like mobility, connectivity, and security to maximize returns. Strategies for repositioning and restructuring assets, considering all dimensions of construction project evolution."
+      },
+      {
+        "title": "Partial Project Management (OPC)",
+        "description": "Scheduling and coordination of construction operations to ensure adherence to predefined execution times and efficient organization. Services cover business consultation, construction preparation, execution, and acceptance phases."
+      },
+      {
+        "title": "Fire Safety",
+        "description": "Preventive measures to mitigate fire risks in all types of buildings, with comprehensive support from design to delivery. Services include audits, diagnoses, fire prevention advice, and assistance to project management."
+      }
+    ]
+  }
+}

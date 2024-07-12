@@ -9,12 +9,24 @@
 
 
 <main class="main">
+  <app-menu></app-menu>
   <section class="bumper-section">
-      <app-menu></app-menu>
       <app-home></app-home>
     </section>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+<br/><br/>
+<br/>
 
-    <section class="horizontal-section">
+    <section  id="services">
+      <app-services></app-services>
+    </section>
+
+    <section id="our-history"><app-our-story></app-our-story></section>
+    <section id="cultur"><app-culture></app-culture></section>
+    <section class="horizontal-section" id="projects">
       <app-horizontal-scroll>
         <div class="cards-container">
           <div class="sample-card" *ngFor="let item of items" [ngClass]="item.class">
@@ -22,11 +34,9 @@
         </div>
       </app-horizontal-scroll>
     </section>
-    <section  id="services">
-      <app-services></app-services>
-    </section>
-    <section id="our-history"><app-our-story></app-our-story></section>
-    <section id="contact-us"><app-contact-us></app-contact-us></section>
+  
+    <section id="contact-us"><app-contact-us></app-contact-us></section><br/><br/>
+    <section class="footer"></section>
   
   
 </main>

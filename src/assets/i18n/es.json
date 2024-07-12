@@ -1,0 +1,60 @@
+{
+  "titleCulture": "Una Cultura Basada En Las Tres Dimensiones De Un Proyecto",
+  "communication": {
+    "title": "Comunicación",
+    "description": "La comunicación es crucial en un proyecto. Cuando un equipo compuesto por diferentes personas con habilidades complementarias solo funcionará bien si la comunicación es gestionada por un políglota del lenguaje técnico. Si no gestionas y dominas la comunicación técnica, es probable que tu proyecto se atasque."
+  },
+  "uniqueness": {
+    "title": "Unicidad",
+    "description": "La unicidad es una característica fuerte de un proyecto. Cada proyecto es único por definición. Tu proyecto es único. ¿Por qué es tan importante esta noción de unicidad? Simplemente porque hacer algo nuevo implica incertidumbre, lo cual es una fuente de riesgo."
+  },
+  "anticipation": {
+    "title": "Anticipación",
+    "description": "Tu proyecto está, por lo tanto, compuesto por riesgos (y oportunidades), y la única manera de evitarlos es anticiparlos. No proyectarse en el futuro, no anticipar, es no dominar tus riesgos, y por lo tanto, no dominar tu proyecto. Así que hazte estas preguntas sobre tu proyecto: ¿Quién necesita comunicarse bien? ¿Cómo agilizar los canales de comunicación? ¿Qué es único en mi proyecto? ¿Qué es diferente de lo que estamos acostumbrados a hacer? ¿Qué debo anticipar? ¿Cuáles son los riesgos y oportunidades? Esta es nuestra cultura."
+  },
+    
+        "navbar": {
+          "home": "Inicio",
+          "ourHistory": "Nuestra historia",
+          "culture": "Cultura",
+          "services": "Servicios",
+          "projects": "Proyectos",
+          "contactUs": "Contacto",
+          "toggle": "Alternar"
+        }
+      
+,      
+    "YOUR_NEEDS": "tus necesidades",
+    "IN_ONE_ECOSYSTEM": "en un solo",
+    "ECO": "ecosistema",
+    "INTEGRATED_TEAM": "Un equipo integrado, humano y de \"campo\"",
+    "MULTI_EXPERTS": "Multi-expertos senior",
+    "KNOW_HOW": "Una experiencia de 40 años",
+    "AFRICAN_CONSULTANCY": "Una consultora africana, para el continente africano",
+    "ourStory": {
+        "title": "Construyendo legados desde 1960 : Excelencia en construcción y gestión de proyectos",
+        "text": "Nuestro viaje en la industria de la construcción comenzó en 1960, junto a algunas de las figuras más veneradas de la arquitectura y la construcción en todo el Reino de Marruecos. Desde el liderazgo pionero del Maestro Abdelkader ben Salem, el Maestro Elie azagury y el Maestro Zevaco hasta las contribuciones visionarias del Maestro Albert ben Chetrite, el Sr. ABdelali Bennis et fils, y otros como Mohammed Fikri Ben abdellah, Hamid guessous, Rachid Andaloussi, Said lahlou y Mostafa Driouech, hemos heredado un rico legado de conocimientos y experiencia. Esta herencia, transmitida de generación en generación, forma la piedra angular de nuestra identidad. En C & F, ofrecemos más que consultoría y gestión de proyectos; proporcionamos una asociación transformadora en cada fase crítica de los proyectos de construcción. Nuestro compromiso con la excelencia se fundamenta en la disciplina especializada de la Gestión de Proyectos (CPM), una habilidad crucial que integra herramientas de vanguardia y conocimientos multidisciplinarios. Este enfoque garantiza la ejecución exitosa de proyectos complejos en sectores diversos como industrial, logística, aeropuertos, médico y hospitalidad."
+      },
+      "offerings": {
+    "title": "Lo que ofrecemos",
+    "subtitle": "Dominio de operaciones para garantizar calidad, flexibilidad, eficiencia de costos y productividad sostenible. Nuestro apoyo incluye la gestión de expectativas del cliente, seguridad del plan de negocios, gestión de procesos de licitación, negociación de contratos y supervisión de la construcción en el sitio.",
+    "cards": [
+      {
+        "title": "Gestión Global de Proyectos",
+        "description": "Soporte completo para el diseño de proyectos, selección de empresas y seguimiento del sitio de construcción hasta la finalización del proyecto. Los servicios incluyen el diseño de proyectos (APS, APD, DCE), la preparación de documentos técnicos, la gestión y coordinación de trabajos, y la asistencia al cliente en la selección de empresas."
+      },
+      {
+        "title": "Desarrollo Inmobiliario",
+        "description": "Enfoques innovadores para redefinir y hacer crecer el sector inmobiliario integrando problemas como movilidad, conectividad y seguridad para maximizar los retornos. Estrategias para reposicionar y reestructurar activos, considerando todas las dimensiones de la evolución de proyectos de construcción."
+      },
+      {
+        "title": "Gestión Parcial de Proyectos (OPC)",
+        "description": "Programación y coordinación de operaciones de construcción para garantizar el cumplimiento de los tiempos de ejecución predefinidos y una organización eficiente. Los servicios abarcan la consulta empresarial, la preparación, la ejecución y las fases de aceptación de la construcción."
+      },
+      {
+        "title": "Seguridad contra Incendios",
+        "description": "Medidas preventivas para mitigar los riesgos de incendio en todo tipo de edificaciones, con un apoyo integral desde el diseño hasta la entrega. Los servicios incluyen auditorías, diagnósticos, asesoramiento en prevención de incendios y asistencia en la gestión de proyectos."
+      }
+    ]
+  }
+}
